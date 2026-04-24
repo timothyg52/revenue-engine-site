@@ -23,11 +23,11 @@ type AnchorProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
 type Props = ButtonProps | AnchorProps;
 
 const base =
-  "inline-flex items-center justify-center gap-2 font-medium rounded-full transition-colors transition-transform duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-base disabled:opacity-50 disabled:pointer-events-none active:translate-y-px";
+  "inline-flex items-center justify-center gap-2 font-medium rounded-full transition-colors transition-transform duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-canvas disabled:opacity-50 disabled:pointer-events-none active:translate-y-px";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-accent text-base hover:bg-accent-hover shadow-[0_0_0_1px_rgba(232,255,92,0.4),0_8px_30px_-8px_rgba(232,255,92,0.45)]",
+    "bg-accent text-canvas hover:bg-accent-hover shadow-[0_0_0_1px_rgba(232,255,92,0.4),0_8px_30px_-8px_rgba(232,255,92,0.45)]",
   ghost:
     "bg-transparent text-fg hover:bg-elevated/70 border border-line",
   outline:

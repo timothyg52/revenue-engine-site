@@ -15,7 +15,7 @@ const legalLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative bg-base">
+    <footer className="relative bg-canvas">
       <div className="mx-auto w-full max-w-6xl px-5 py-16">
         <div className="grid gap-10 md:grid-cols-3">
           <div className="flex flex-col gap-3">

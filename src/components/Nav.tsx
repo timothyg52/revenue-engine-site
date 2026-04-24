@@ -38,7 +38,7 @@ export function Nav() {
         className={cn(
           "fixed inset-x-0 top-0 z-50 transition-all duration-300",
           scrolled
-            ? "border-b border-line bg-base/70 backdrop-blur-xl"
+            ? "border-b border-line bg-canvas/70 backdrop-blur-xl"
             : "border-b border-transparent",
         )}
       >
@@ -97,7 +97,7 @@ export function Nav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-40 bg-base/95 backdrop-blur-2xl md:hidden"
+            className="fixed inset-0 z-40 bg-canvas/95 backdrop-blur-2xl md:hidden"
           >
             <div className="flex h-full flex-col items-start justify-center gap-1 px-8 pt-20">
               {links.map((l, i) => (

@@ -63,7 +63,7 @@ export function LeadForm() {
         transition={{ duration: 0.6, ease }}
         className="flex h-full min-h-[480px] flex-col items-center justify-center gap-4 rounded-2xl border border-accent/30 bg-accent/[0.04] p-8 text-center"
       >
-        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-base">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent text-canvas">
           <Check className="h-6 w-6" />
         </div>
         <h3 className="font-display text-3xl text-fg">Got it.</h3>

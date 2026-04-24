@@ -48,7 +48,7 @@ export function WhoThisIsFor() {
             className="rounded-2xl border border-accent/30 bg-accent/[0.04] p-7 ring-1 ring-accent/10"
           >
             <div className="mb-5 flex items-center gap-2">
-              <div className="flex h-7 w-7 items-center justify-center rounded-full bg-accent text-base">
+              <div className="flex h-7 w-7 items-center justify-center rounded-full bg-accent text-canvas">
                 <Check className="h-4 w-4" aria-hidden />
               </div>
               <h3 className="font-display text-2xl text-fg">Good fit</h3>

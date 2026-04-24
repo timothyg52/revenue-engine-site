@@ -22,7 +22,7 @@ export function SmsMockup({ className }: { className?: string }) {
   return (
     <div className={cn("relative w-full max-w-[340px]", className)}>
       <div className="relative rounded-[2.25rem] border border-line bg-surface p-2 shadow-[0_40px_120px_-30px_rgba(0,0,0,0.7)]">
-        <div className="rounded-[1.85rem] bg-base p-4 ring-1 ring-line/60">
+        <div className="rounded-[1.85rem] bg-canvas p-4 ring-1 ring-line/60">
           <div className="mx-auto mb-3 h-1 w-12 rounded-full bg-line-strong" aria-hidden />
           <div className="flex flex-col items-center gap-1 border-b border-line pb-3">
             <div className="h-9 w-9 rounded-full bg-gradient-to-br from-elevated to-line-strong ring-1 ring-line" />
@@ -41,7 +41,7 @@ export function SmsMockup({ className }: { className?: string }) {
                 className={cn(
                   "max-w-[82%] rounded-2xl px-3 py-2 text-[12.5px] leading-snug",
                   m.who === "agent"
-                    ? "self-end rounded-br-sm bg-accent text-base"
+                    ? "self-end rounded-br-sm bg-accent text-canvas"
                     : "self-start rounded-bl-sm bg-elevated text-fg ring-1 ring-line",
                 )}
               >

@@ -48,7 +48,7 @@ export function SocialProof() {
   return (
     <section
       aria-label="Results at a glance"
-      className="relative border-b border-line bg-base"
+      className="relative border-b border-line bg-canvas"
     >
       <div className="mx-auto w-full max-w-6xl px-5 py-12">
         <div className="grid grid-cols-2 divide-line md:grid-cols-4 md:divide-x">

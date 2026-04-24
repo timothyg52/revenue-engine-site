@@ -117,7 +117,7 @@ export default function RootLayout({
       className={`${inter.variable} ${instrument.variable}`}
       suppressHydrationWarning
     >
-      <body className="bg-base text-fg antialiased min-h-screen">
+      <body className="bg-canvas text-fg antialiased min-h-screen">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand surfaces */
-  --color-base: #0a0a0b;
+  /* Brand surfaces — renamed `base` → `canvas` to avoid colliding with
+     Tailwind's `text-base` font-size utility (which would otherwise also
+     emit `color: var(--color-base)` and stomp foreground colors). */
+  --color-canvas: #0a0a0b;
   --color-surface: #111114;
   --color-elevated: #16161a;
 
@@ -27,13 +29,29 @@
   --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* Spec-named aliases for direct CSS reference (mirrors the original brand spec). */
 :root {
   color-scheme: dark;
+
+  --bg-base: var(--color-canvas);
+  --bg-surface: var(--color-surface);
+  --bg-elevated: var(--color-elevated);
+
+  --border-subtle: var(--color-line);
+  --border-default: var(--color-line-strong);
+
+  --text-primary: var(--color-fg);
+  --text-secondary: var(--color-fg-muted);
+  --text-muted: var(--color-fg-dim);
+
+  --accent: var(--color-accent);
+  --accent-hover: var(--color-accent-hover);
+  --accent-glow: rgba(232, 255, 92, 0.15);
 }
 
 html,
 body {
-  background: var(--color-base);
+  background: var(--color-canvas);
   color: var(--color-fg);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -47,7 +65,7 @@ body {
 
 ::selection {
   background: var(--color-accent);
-  color: var(--color-base);
+  color: var(--color-canvas);
 }
 
 .no-scrollbar::-webkit-scrollbar { display: none; }
