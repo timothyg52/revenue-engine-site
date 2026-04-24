@@ -8,8 +8,6 @@ import { VoiceMockup } from "@/components/VoiceMockup";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const logos = ["MED SPA CO", "ROOF PRO", "SMITH DENTAL", "LEDGER LAW", "PEAK FITNESS"];
-
 export function Hero() {
   const ref = React.useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
@@ -81,23 +79,15 @@ export function Hero() {
             </Button>
           </motion.div>
 
-          <motion.div
+          <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, ease, delay: 0.5 }}
-            className="mt-8 flex flex-col gap-3 border-t border-line pt-6"
+            className="mt-8 border-t border-line pt-6 text-center text-[11px] font-medium uppercase tracking-[0.18em] text-fg-dim"
           >
-            <span className="text-xs font-medium uppercase tracking-[0.18em] text-fg-dim">
-              Trusted by Nashville service operators
-            </span>
-            <div className="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm font-semibold tracking-wider text-fg-dim">
-              {logos.map((l) => (
-                <span key={l} className="opacity-70 hover:opacity-100 transition-opacity">
-                  {l}
-                </span>
-              ))}
-            </div>
-          </motion.div>
+            Currently onboarding our first Nashville clients — case studies
+            publishing Q3 2026.
+          </motion.p>
         </div>
 
         <motion.div
