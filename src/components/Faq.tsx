@@ -47,7 +47,7 @@ function FaqItem({ q, a, defaultOpen = false }: { q: string; a: string; defaultO
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        className="group flex w-full items-center justify-between gap-6 py-6 text-left"
+        className="group flex min-h-14 w-full items-center justify-between gap-6 py-6 text-left"
       >
         <span className="text-base font-medium text-fg sm:text-lg">{q}</span>
         <span

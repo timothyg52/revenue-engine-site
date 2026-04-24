@@ -12,7 +12,7 @@ import { cn } from "@/lib/cn";
 const ease = [0.16, 1, 0.3, 1] as const;
 
 const fieldBase =
-  "w-full rounded-xl border border-line bg-surface/80 px-4 py-3 text-sm text-fg placeholder:text-fg-dim outline-none transition-colors focus:border-accent/50 focus:bg-surface focus:ring-2 focus:ring-accent/20";
+  "block w-full min-h-12 rounded-xl border border-line bg-surface/80 px-4 py-3 text-sm text-fg placeholder:text-fg-dim outline-none transition-colors focus:border-accent/50 focus:bg-surface focus:ring-2 focus:ring-accent/20";
 
 const labelBase = "block text-xs font-medium uppercase tracking-wider text-fg-dim mb-1.5";
 

@@ -70,7 +70,7 @@ export function Nav() {
             <Button
               href="#book"
               variant="primary"
-              size="sm"
+              size="md"
               trailingIcon={<ArrowCta />}
               className="hidden sm:inline-flex"
             >
@@ -79,7 +79,7 @@ export function Nav() {
             <button
               type="button"
               onClick={() => setOpen((v) => !v)}
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-surface/60 text-fg backdrop-blur md:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-surface/60 text-fg backdrop-blur md:hidden"
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
             >
@@ -108,7 +108,7 @@ export function Nav() {
                   initial={{ opacity: 0, x: -16 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.05 + i * 0.04, duration: 0.4 }}
-                  className="font-display text-5xl text-fg hover:text-accent transition-colors"
+                  className="flex min-h-[56px] w-full items-center font-display text-5xl text-fg hover:text-accent transition-colors"
                 >
                   {l.label}
                 </motion.a>
