@@ -89,7 +89,7 @@ export function Frameworks() {
 
         <FrameworkBlock
           label="Framework 03 — Operations"
-          heading="One dashboard. Every lead. Full visibility."
+          heading="Finally know which marketing dollar is actually printing."
           copy="Stop guessing where leads drop off. See every call, message, and booking in one view — with the exact ROI each system is producing for your business."
           features={[
             {

@@ -28,12 +28,15 @@ export function FinalCta() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease }}
-          className="mx-auto max-w-3xl text-center"
+          className="mx-auto max-w-4xl text-center"
         >
-          <h2 className="font-display text-balance text-5xl text-fg sm:text-6xl md:text-7xl">
-            Your next 90 days <br className="hidden sm:inline" />
-            can look different.
+          <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-accent">
+            Stop chasing leads. Start booking them.
           </h2>
+          <p className="mt-5 font-display text-balance text-4xl text-fg sm:text-5xl md:text-6xl">
+            In 21 days your phone stops ringing missed and your calendar starts
+            filling itself.
+          </p>
           <p className="mx-auto mt-6 max-w-xl text-pretty text-base text-fg-muted sm:text-lg">
             Book a 20-minute strategy call. If we&rsquo;re not a fit, we&rsquo;ll tell
             you on the call and point you somewhere that is.

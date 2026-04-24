@@ -33,7 +33,7 @@ export function Process() {
         <SectionHeader
           eyebrow="Process"
           title="From audit to autopilot in 21 days."
-          description="Three steps. One clear path. Zero fluff."
+          description="You sign Monday. We're booking your appointments by month-end."
         />
 
         <div className="relative mt-16 grid gap-5 md:grid-cols-3 md:gap-6">

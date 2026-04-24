@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "What's this actually going to cost me?",
-    a: "Most systems run $2K–$5K to build plus a monthly optimization retainer. We quote on the strategy call after seeing your numbers — no generic packages.",
+    a: "Build is $2K–$5K depending on how many channels we wire up (voice, SMS, CRM). Monthly retainer is $1,500–$3,000 and covers optimization, scripts, and reporting. Most clients see the build cost back in 30–45 days. We'll quote exact numbers on the call once we see your call volume and close rate.",
   },
   {
     q: "Do I need to be technical?",
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "Do you work outside Nashville?",
-    a: "Yes — we're Nashville-based but most of our work is remote. We currently support clients across Tennessee, Georgia, Texas, and Florida. The systems work anywhere; the relationships are easier when you're local to us.",
+    a: "Right now, no. We're hands-on with every client and we live here. If you're in Memphis, Knoxville, or Chattanooga we'll consider it. Anywhere else, we'll refer you to operators we trust.",
   },
   {
     q: "How do I know it's actually working?",

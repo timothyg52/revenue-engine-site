@@ -91,10 +91,11 @@ export function LeadForm() {
     >
       <div>
         <h3 className="font-display text-2xl text-fg sm:text-3xl">
-          Or send us your numbers.
+          Not ready to book?
         </h3>
         <p className="mt-1 text-sm text-fg-muted">
-          We'll review and reply within one business day.
+          Send your numbers — we&rsquo;ll reply by tomorrow with what we&rsquo;d
+          actually do.
         </p>
       </div>
 
@@ -240,7 +241,7 @@ export function LeadForm() {
         }
         className="mt-1"
       >
-        {submitState === "submitting" ? "Sending…" : "Send it"}
+        {submitState === "submitting" ? "Sending…" : "Get my custom audit"}
       </Button>
 
       <p className="text-xs text-fg-dim">

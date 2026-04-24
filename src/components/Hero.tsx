@@ -41,7 +41,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease }}
           >
-            <Pill>AI Systems × Nashville Service Businesses</Pill>
+            <Pill>For Nashville service businesses doing $30K–$500K/month</Pill>
           </motion.div>
 
           <motion.h1
@@ -60,9 +60,9 @@ export function Hero() {
             transition={{ duration: 0.8, ease, delay: 0.15 }}
             className="max-w-xl text-pretty text-base text-fg-muted sm:text-lg"
           >
-            We build AI voice agents, SMS follow-up bots, and lead conversion
-            systems that turn your website traffic and cold leads into calendar
-            bookings — 24/7, without hiring another rep.
+            We install an AI receptionist that answers every call, texts every
+            lead in under 60 seconds, and books them straight onto your calendar
+            — for less than the cost of a part-time front desk.
           </motion.p>
 
           <motion.div
