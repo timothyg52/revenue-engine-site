@@ -1,67 +1,48 @@
 "use client";
 
 import * as React from "react";
-import Cal, { getCalApi } from "@calcom/embed-react";
+import Script from "next/script";
 
-const CAL_LINK =
-  process.env.NEXT_PUBLIC_CAL_LINK || "revenue-engine/strategy-call";
+const BOOKING_URL =
+  process.env.NEXT_PUBLIC_BOOKING_URL ||
+  "https://links.revenue-engine-ai.com/widget/booking/M6mi5Lfr7JxDsfeqnWy7";
+
+const IFRAME_ID = "revenue-engine-booking";
 
 export function CalEmbed() {
-  React.useEffect(() => {
-    (async () => {
-      const cal = await getCalApi({ namespace: "strategy-call" });
-      const palette = {
-        "cal-bg": "#0a0a0b",
-        "cal-bg-emphasis": "#16161a",
-        "cal-bg-muted": "#111114",
-        "cal-text": "#f5f5f7",
-        "cal-text-emphasis": "#ffffff",
-        "cal-text-muted": "#a1a1aa",
-        "cal-border": "#1f1f24",
-        "cal-border-emphasis": "#2a2a31",
-        "cal-brand": "#e8ff5c",
-      };
-      cal("ui", {
-        cssVarsPerTheme: { dark: palette, light: palette },
-        hideEventTypeDetails: false,
-        layout: "month_view",
-        theme: "dark",
-      });
-    })();
-  }, []);
-
   return (
     <div
-      className="relative w-full overflow-visible rounded-2xl border border-line bg-surface/60"
+      className="relative w-full overflow-hidden rounded-2xl border border-line bg-surface/60"
       style={{ minHeight: 720 }}
     >
-      {/* Cal.com's embed wrapper sometimes mounts with visibility:hidden until
-          its internal sizer settles. Force visibility for our wrapper + any
-          descendant the embed library injects. */}
+      {/* GoHighLevel's form_embed.js posts a `hsFormCallback` message with the
+          iframe's natural height so we can resize. We also force visibility on
+          the iframe so it's never hidden during mount. */}
       <style>{`
-        .cal-embed-host,
-        .cal-embed-host > div,
-        .cal-embed-host iframe,
-        [class*="cal-element-embed"] {
+        #${IFRAME_ID} {
           visibility: visible !important;
           opacity: 1 !important;
           width: 100% !important;
           min-height: 720px !important;
-        }
-        .cal-embed-host iframe {
-          height: 100% !important;
           border: 0 !important;
           background: transparent !important;
+          display: block !important;
         }
       `}</style>
-      <div className="cal-embed-host w-full" style={{ minHeight: 720 }}>
-        <Cal
-          namespace="strategy-call"
-          calLink={CAL_LINK}
-          style={{ width: "100%", minHeight: 720, border: 0 }}
-          config={{ layout: "month_view", theme: "dark" }}
-        />
-      </div>
+
+      <iframe
+        id={IFRAME_ID}
+        src={BOOKING_URL}
+        title="Book a strategy call with Revenue Engine"
+        loading="lazy"
+        scrolling="no"
+        style={{ width: "100%", minHeight: 720, border: 0 }}
+      />
+
+      <Script
+        src="https://link.msgsndr.com/js/form_embed.js"
+        strategy="lazyOnload"
+      />
     </div>
   );
 }
