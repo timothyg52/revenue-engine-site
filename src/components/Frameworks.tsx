@@ -53,7 +53,7 @@ export function Frameworks() {
               description: "Every call logged, searchable, sentiment-tagged.",
             },
           ]}
-          visual={<VoiceMockup />}
+          visual={<VoiceMockup variant="hvacEmergency" />}
           side="right"
         />
 

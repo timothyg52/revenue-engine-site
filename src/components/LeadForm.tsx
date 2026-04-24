@@ -113,7 +113,7 @@ export function LeadForm() {
             {...register("name")}
           />
           {errors.name ? (
-            <p className="mt-1 text-xs text-red-400">{errors.name.message}</p>
+            <p className="mt-2 text-sm text-red-400">{errors.name.message}</p>
           ) : null}
         </div>
 
@@ -131,7 +131,7 @@ export function LeadForm() {
             {...register("business")}
           />
           {errors.business ? (
-            <p className="mt-1 text-xs text-red-400">{errors.business.message}</p>
+            <p className="mt-2 text-sm text-red-400">{errors.business.message}</p>
           ) : null}
         </div>
 
@@ -149,7 +149,7 @@ export function LeadForm() {
             {...register("phone")}
           />
           {errors.phone ? (
-            <p className="mt-1 text-xs text-red-400">{errors.phone.message}</p>
+            <p className="mt-2 text-sm text-red-400">{errors.phone.message}</p>
           ) : null}
         </div>
 
@@ -167,7 +167,7 @@ export function LeadForm() {
             {...register("email")}
           />
           {errors.email ? (
-            <p className="mt-1 text-xs text-red-400">{errors.email.message}</p>
+            <p className="mt-2 text-sm text-red-400">{errors.email.message}</p>
           ) : null}
         </div>
       </div>
@@ -193,7 +193,7 @@ export function LeadForm() {
           ))}
         </select>
         {errors.monthlyRevenue ? (
-          <p className="mt-1 text-xs text-red-400">{errors.monthlyRevenue.message}</p>
+          <p className="mt-2 text-sm text-red-400">{errors.monthlyRevenue.message}</p>
         ) : null}
       </div>
 
@@ -210,7 +210,7 @@ export function LeadForm() {
           {...register("problem")}
         />
         {errors.problem ? (
-          <p className="mt-1 text-xs text-red-400">{errors.problem.message}</p>
+          <p className="mt-2 text-sm text-red-400">{errors.problem.message}</p>
         ) : null}
       </div>
 

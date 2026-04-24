@@ -7,15 +7,82 @@ import { cn } from "@/lib/cn";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const transcript = [
-  { who: "ai", text: "Thanks for calling Bella Aesthetics — this is Aria. How can I help?" },
-  { who: "caller", text: "Hey, I saw your Botox ad. Got any openings this week?" },
-  { who: "ai", text: "Absolutely. I have Thursday at 2 PM or Friday at 10 AM — which works?" },
-  { who: "caller", text: "Thursday works." },
-  { who: "ai", text: "Perfect, I've got you booked. Text confirmation on its way." },
-] as const;
+type Line = { who: "ai" | "caller"; text: string };
 
-export function VoiceMockup({ className }: { className?: string }) {
+export type VoiceVariant = {
+  agentName: string;
+  duration: string;
+  transcript: readonly Line[];
+  statusText: string;
+};
+
+const variants = {
+  medSpa: {
+    agentName: "Aria",
+    duration: "00:42",
+    statusText: "Appointment booked · Thursday 2:00 PM",
+    transcript: [
+      {
+        who: "ai",
+        text: "Thanks for calling Bella Aesthetics — this is Aria. How can I help?",
+      },
+      {
+        who: "caller",
+        text: "Hey, I saw your Botox ad. Got any openings this week?",
+      },
+      {
+        who: "ai",
+        text: "Absolutely. I have Thursday at 2 PM or Friday at 10 AM — which works?",
+      },
+      { who: "caller", text: "Thursday works." },
+      {
+        who: "ai",
+        text: "Perfect, I've got you booked. Text confirmation on its way.",
+      },
+    ],
+  },
+  hvacEmergency: {
+    agentName: "Riley",
+    duration: "00:38",
+    statusText: "Same-day visit booked · Today 2:00 PM · $129 hold",
+    transcript: [
+      {
+        who: "ai",
+        text: "Cooler Air Heating, this is Riley. How can I help?",
+      },
+      {
+        who: "caller",
+        text: "My A/C just quit and the house is 88. I need someone today.",
+      },
+      {
+        who: "ai",
+        text: "I hear you — let me get a tech routed. Have you used us before?",
+      },
+      { who: "caller", text: "First time. Just searched for emergency HVAC." },
+      {
+        who: "ai",
+        text: "Got it. Same-day call-out is $129 and goes toward the repair if we fix it on the visit. Best window I have is 2–4 PM — lock it in?",
+      },
+      { who: "caller", text: "Yes please." },
+      {
+        who: "ai",
+        text: "Done. The tech will text you 30 minutes before arrival.",
+      },
+    ],
+  },
+} as const satisfies Record<string, VoiceVariant>;
+
+export type VoiceVariantName = keyof typeof variants;
+
+export function VoiceMockup({
+  className,
+  variant = "medSpa",
+}: {
+  className?: string;
+  variant?: VoiceVariantName;
+}) {
+  const data = variants[variant];
+
   return (
     <div
       className={cn(
@@ -23,7 +90,10 @@ export function VoiceMockup({ className }: { className?: string }) {
         className,
       )}
     >
-      <div aria-hidden className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-white/[0.04] to-transparent" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-white/[0.04] to-transparent"
+      />
 
       <div className="relative flex items-center gap-3 border-b border-line pb-4">
         <div className="relative flex h-10 w-10 items-center justify-center rounded-full bg-accent/10 text-accent">
@@ -31,19 +101,23 @@ export function VoiceMockup({ className }: { className?: string }) {
         </div>
         <div className="flex-1">
           <div className="text-sm font-medium text-fg">Revenue Engine AI</div>
-          <div className="text-xs text-fg-muted">Live call · 00:42</div>
+          <div className="text-xs text-fg-muted">
+            Live call · {data.duration}
+          </div>
         </div>
         <div className="flex items-center gap-2 rounded-full border border-red-500/30 bg-red-500/10 px-2.5 py-1">
           <span className="relative inline-flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-70 animate-pulse-dot" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-red-500" />
           </span>
-          <span className="text-[10px] font-semibold uppercase tracking-wider text-red-400">Live</span>
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-red-400">
+            Live
+          </span>
         </div>
       </div>
 
       <div className="relative flex flex-col gap-2.5 pt-4">
-        {transcript.map((line, i) => (
+        {data.transcript.map((line, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 10 }}
@@ -58,7 +132,7 @@ export function VoiceMockup({ className }: { className?: string }) {
             )}
           >
             <div className="mb-0.5 text-[10px] font-semibold uppercase tracking-wider opacity-60">
-              {line.who === "ai" ? "AI · Aria" : "Caller"}
+              {line.who === "ai" ? `AI · ${data.agentName}` : "Caller"}
             </div>
             {line.text}
           </motion.div>
@@ -93,8 +167,8 @@ export function VoiceMockup({ className }: { className?: string }) {
         transition={{ delay: 0.85, duration: 0.5 }}
         className="relative mt-4 flex items-center gap-2 rounded-xl border border-accent/20 bg-accent/5 px-3 py-2.5"
       >
-        <Check className="h-4 w-4 text-accent" aria-hidden />
-        <span className="text-xs font-medium text-fg">Appointment booked · Thursday 2:00 PM</span>
+        <Check className="h-4 w-4 flex-none text-accent" aria-hidden />
+        <span className="text-xs font-medium text-fg">{data.statusText}</span>
       </motion.div>
     </div>
   );
