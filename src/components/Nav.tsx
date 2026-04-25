@@ -32,6 +32,15 @@ export function Nav() {
     };
   }, [open]);
 
+  React.useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
+
   return (
     <>
       <header
@@ -58,7 +67,7 @@ export function Nav() {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  className="text-sm text-fg-muted transition-colors hover:text-fg"
+                  className="rounded text-sm text-fg-muted transition-colors hover:text-fg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4 focus-visible:ring-offset-canvas"
                 >
                   {l.label}
                 </a>
@@ -79,7 +88,7 @@ export function Nav() {
             <button
               type="button"
               onClick={() => setOpen((v) => !v)}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-surface/60 text-fg backdrop-blur md:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-surface/60 text-fg backdrop-blur transition-colors hover:border-line-strong focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-canvas md:hidden"
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
             >
@@ -93,6 +102,9 @@ export function Nav() {
         {open ? (
           <motion.div
             key="overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Site navigation"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

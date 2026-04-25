@@ -84,7 +84,7 @@ export function Founder() {
                 href={LOOM_URL}
                 target={LOOM_URL.startsWith("http") ? "_blank" : undefined}
                 rel={LOOM_URL.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="group inline-flex items-center gap-2.5 rounded-full border border-line bg-surface/60 py-2 pl-2 pr-5 text-sm font-medium text-fg backdrop-blur transition-colors hover:border-accent/40 hover:text-accent"
+                className="group inline-flex items-center gap-2.5 rounded-full border border-line bg-surface/60 py-2 pl-2 pr-5 text-sm font-medium text-fg backdrop-blur transition-colors hover:border-accent/40 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-canvas"
               >
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent text-canvas">
                   <Play className="h-3.5 w-3.5 fill-canvas" aria-hidden />
