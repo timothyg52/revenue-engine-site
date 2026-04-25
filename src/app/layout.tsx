@@ -1,11 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Instrument_Serif } from "next/font/google";
-import Script from "next/script";
 import { Providers } from "@/components/Providers";
 import "./globals.css";
-
-const GHL_CHAT_WIDGET_ID =
-  process.env.NEXT_PUBLIC_GHL_CHAT_WIDGET_ID || "69ec319acbb9f442d0ed8b5f";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -128,16 +124,6 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Providers>{children}</Providers>
-        {/* GoHighLevel / LeadConnector chat widget. Loads after page idle
-            so it never blocks paint or interaction. Widget ID is
-            overridable via NEXT_PUBLIC_GHL_CHAT_WIDGET_ID. */}
-        <Script
-          id="ghl-chat-widget-loader"
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id={GHL_CHAT_WIDGET_ID}
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   );

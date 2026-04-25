@@ -52,7 +52,6 @@ All env vars are documented in [`.env.local.example`](./.env.local.example). Cop
 | `GHL_WEBHOOK_URL` | yes | Server-side. Receives JSON POSTs from `/api/lead` and `/api/lead-magnet`. Configure as an inbound webhook in GoHighLevel. |
 | `NEXT_PUBLIC_SITE_URL` | yes | Used by `metadata`, `robots.ts`, `sitemap.ts` for canonical URLs. Set to the production origin (e.g. `https://revenueengine.ai`). |
 | `NEXT_PUBLIC_FOUNDER_LOOM_URL` | optional | Linked from the "Watch the 90-second intro" CTA in the Founder section. If unset the CTA falls back to `#`. |
-| `NEXT_PUBLIC_GHL_CHAT_WIDGET_ID` | optional | GoHighLevel chat widget ID. Defaults to the production widget. Loaded site-wide via `next/script` with `lazyOnload` strategy in [`src/app/layout.tsx`](src/app/layout.tsx). |
 
 Without `GHL_WEBHOOK_URL` set, both lead routes log payloads to the server console and return `{ ok: true, queued: true }` so local dev still feels real.
 
