@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Terms of Service",
   description:
     "Revenue Engine terms of service — service agreement, SMS/email consent, and Tennessee-law governance.",
-  alternates: { canonical: "https://revenueengine.ai/terms" },
+  alternates: { canonical: "https://revenue-engine-ai.com/terms" },
   robots: { index: true, follow: true },
 };
 

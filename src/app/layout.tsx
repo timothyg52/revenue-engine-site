@@ -17,7 +17,7 @@ const instrument = Instrument_Serif({
   preload: true,
 });
 
-const SITE_URL = "https://revenueengine.ai";
+const SITE_URL = "https://revenue-engine-ai.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

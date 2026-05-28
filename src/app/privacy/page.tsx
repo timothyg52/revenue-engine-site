@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Revenue Engine privacy policy — what data we collect, how we use it, and how SMS opt-in consent is handled.",
-  alternates: { canonical: "https://revenueengine.ai/privacy" },
+  alternates: { canonical: "https://revenue-engine-ai.com/privacy" },
   robots: { index: true, follow: true },
 };
 

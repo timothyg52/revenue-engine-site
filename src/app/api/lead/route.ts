@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         ...parsed.data,
-        source: "revenueengine.ai",
+        source: "revenue-engine-ai.com",
         receivedAt: new Date().toISOString(),
         ip,
       }),

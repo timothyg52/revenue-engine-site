@@ -50,7 +50,7 @@ All env vars are documented in [`.env.local.example`](./.env.local.example). Cop
 |---|---|---|
 | `NEXT_PUBLIC_BOOKING_URL` | yes | `<iframe src>` in `src/components/CalEmbed.tsx`. Currently a GoHighLevel booking widget at `links.revenue-engine-ai.com`. Override with any iframe-embeddable booking URL. |
 | `GHL_WEBHOOK_URL` | yes | Server-side. Receives JSON POSTs from `/api/lead` and `/api/lead-magnet`. Configure as an inbound webhook in GoHighLevel. |
-| `NEXT_PUBLIC_SITE_URL` | yes | Used by `metadata`, `robots.ts`, `sitemap.ts` for canonical URLs. Set to the production origin (e.g. `https://revenueengine.ai`). |
+| `NEXT_PUBLIC_SITE_URL` | yes | Used by `metadata`, `robots.ts`, `sitemap.ts` for canonical URLs. Set to the production origin (e.g. `https://revenue-engine-ai.com`). |
 | `NEXT_PUBLIC_FOUNDER_LOOM_URL` | optional | Linked from the "Watch the 90-second intro" CTA in the Founder section. If unset the CTA falls back to `#`. |
 
 Without `GHL_WEBHOOK_URL` set, both lead routes log payloads to the server console and return `{ ok: true, queued: true }` so local dev still feels real.
@@ -99,7 +99,7 @@ The component name is still `CalEmbed` to minimize import churn — feel free to
 2. Redeploy. No code changes needed.
 
 The two routes send slightly different payloads:
-- `/api/lead` (full strategy-call form) — name, business, phone, email, monthlyRevenue, problem, plus `source: "revenueengine.ai"` and `receivedAt`.
+- `/api/lead` (full strategy-call form) — name, business, phone, email, monthlyRevenue, problem, plus `source: "revenue-engine-ai.com"` and `receivedAt`.
 - `/api/lead-magnet` (5-Leak Audit) — email only, plus `source: "5-leak-audit"` and `tag: "lead-magnet"`.
 
 Both are validated with Zod ([`src/lib/leadSchema.ts`](src/lib/leadSchema.ts)) and rate-limited per IP ([`src/lib/rateLimit.ts`](src/lib/rateLimit.ts), 5 req/min). The in-memory limiter is fine for a single Vercel instance; for multi-region or serverless concurrency, swap it for Upstash Ratelimit.

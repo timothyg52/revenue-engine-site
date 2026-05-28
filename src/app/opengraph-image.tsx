@@ -85,7 +85,7 @@ export default async function OG() {
             paddingTop: "24px",
           }}
         >
-          <div style={{ display: "flex" }}>revenueengine.ai</div>
+          <div style={{ display: "flex" }}>revenue-engine-ai.com</div>
           <div style={{ display: "flex" }}>Built in Nashville, TN</div>
         </div>
       </div>
