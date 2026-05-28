@@ -9,7 +9,7 @@ import { cn } from "@/lib/cn";
 const links = [
   { href: "#frameworks", label: "Frameworks" },
   { href: "#process", label: "Process" },
-  { href: "#results", label: "Results" },
+  { href: "#results", label: "Offer" },
   { href: "#faq", label: "FAQ" },
 ];
 

@@ -6,7 +6,7 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 const items = [
   "Two years building lead systems",
-  "150+ clients served",
+  "150+ tax clients served",
   "Nashville-based",
   "On-camera guarantee: you're always talking to me",
 ];

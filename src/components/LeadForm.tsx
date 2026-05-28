@@ -228,6 +228,30 @@ export function LeadForm() {
         ) : null}
       </AnimatePresence>
 
+      <div>
+        <label
+          htmlFor="smsConsent"
+          className="flex items-start gap-3 text-sm text-fg-muted"
+        >
+          <input
+            id="smsConsent"
+            type="checkbox"
+            className="mt-0.5 h-4 w-4 flex-none rounded border-line bg-surface text-accent focus:ring-2 focus:ring-accent/30"
+            aria-invalid={!!errors.smsConsent}
+            {...register("smsConsent")}
+          />
+          <span>
+            I agree to receive SMS messages from Revenue Engine (required to
+            book)
+          </span>
+        </label>
+        {errors.smsConsent ? (
+          <p className="mt-2 text-sm text-red-400">
+            {errors.smsConsent.message}
+          </p>
+        ) : null}
+      </div>
+
       <Button
         type="submit"
         size="lg"
@@ -244,8 +268,18 @@ export function LeadForm() {
         {submitState === "submitting" ? "Sending…" : "Get my custom audit"}
       </Button>
 
-      <p className="text-xs text-fg-dim">
-        By submitting, you agree to our terms. We don't spam — promise.
+      <p className="text-xs leading-relaxed text-fg-dim">
+        By submitting, you consent to receive SMS messages and calls from
+        Revenue Engine at the number provided, including via automated systems.
+        Message frequency varies. Msg &amp; data rates may apply. Reply STOP to
+        opt out, HELP for help. Consent is not a condition of purchase. See our{" "}
+        <a
+          href="/privacy"
+          className="text-fg-muted underline-offset-4 hover:text-accent hover:underline"
+        >
+          Privacy Policy
+        </a>
+        .
       </p>
     </form>
   );

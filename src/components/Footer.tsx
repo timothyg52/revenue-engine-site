@@ -1,11 +1,11 @@
-import { MapPin } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
 
 const navLinks = [
-  { href: "#frameworks", label: "Frameworks" },
-  { href: "#process", label: "Process" },
-  { href: "#results", label: "Results" },
-  { href: "#faq", label: "FAQ" },
-  { href: "#book", label: "Book a Call" },
+  { href: "/#frameworks", label: "Frameworks" },
+  { href: "/#process", label: "Process" },
+  { href: "/#results", label: "Offer" },
+  { href: "/#faq", label: "FAQ" },
+  { href: "/#book", label: "Book a Call" },
 ];
 
 const legalLinks = [
@@ -20,7 +20,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div className="flex flex-col gap-3">
             <a
-              href="#top"
+              href="/"
               className="font-display text-2xl text-fg hover:text-accent transition-colors"
             >
               Revenue Engine
@@ -28,6 +28,19 @@ export function Footer() {
             <p className="max-w-xs text-pretty text-sm text-fg-muted">
               AI lead generation systems for Nashville service businesses.
             </p>
+            <address className="mt-2 flex flex-col gap-1.5 text-sm not-italic text-fg-muted">
+              <span className="inline-flex items-center gap-1.5">
+                <MapPin className="h-3.5 w-3.5 text-fg-dim" aria-hidden />
+                Nashville, TN
+              </span>
+              <a
+                href="mailto:futureceo.52@gmail.com"
+                className="inline-flex items-center gap-1.5 transition-colors hover:text-fg"
+              >
+                <Mail className="h-3.5 w-3.5 text-fg-dim" aria-hidden />
+                futureceo.52@gmail.com
+              </a>
+            </address>
           </div>
 
           <div className="flex flex-col gap-3">
@@ -64,10 +77,6 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-            <div className="mt-2 inline-flex items-center gap-1.5 text-xs text-fg-dim">
-              <MapPin className="h-3 w-3" aria-hidden />
-              Built in Nashville, TN
-            </div>
           </div>
         </div>
 

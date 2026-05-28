@@ -14,6 +14,7 @@ const FRIENDLY = {
   email: "Double-check that email.",
   revenue: "Pick a revenue range.",
   problem: "Tell us what's broken — even one sentence helps.",
+  smsConsent: "Please confirm SMS consent to continue.",
 } as const;
 
 export const leadSchema = z.object({
@@ -44,6 +45,7 @@ export const leadSchema = z.object({
     .trim()
     .min(10, { message: FRIENDLY.problem })
     .max(2000, { message: "Keep it under 2,000 characters." }),
+  smsConsent: z.literal(true, { message: FRIENDLY.smsConsent }),
 });
 
 export type LeadInput = z.infer<typeof leadSchema>;
