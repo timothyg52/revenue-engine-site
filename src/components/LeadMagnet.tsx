@@ -68,15 +68,17 @@ export function LeadMagnet() {
                   <FileDown className="h-4 w-4" aria-hidden />
                 </span>
                 <span className="text-xs font-semibold uppercase tracking-[0.22em] text-fg-dim">
-                  Not ready to talk yet?
+                  Not ready to book the audit call?
                 </span>
               </div>
               <h3 className="font-display text-balance text-3xl text-fg sm:text-4xl">
-                Get the 5-Leak Audit we use on every strategy call.
+                The Tree Company Revenue Leak Audit Worksheet.
               </h3>
               <p className="max-w-lg text-pretty text-sm leading-relaxed text-fg-muted sm:text-base">
-                One-page PDF. The five places service businesses lose the most
-                leads — and the fix for each. No upsell.
+                Free PDF. The eight places tree service companies leak revenue
+                — from missed storm calls to unfollowed-up estimates — and how
+                to plug each one. Fill it out yourself or use it on the audit
+                call. No upsell.
               </p>
             </div>
 

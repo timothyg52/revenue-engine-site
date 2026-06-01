@@ -4,7 +4,7 @@ import * as React from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { Button, ArrowCta } from "@/components/ui/Button";
 import { Pill } from "@/components/ui/Pill";
-import { VoiceMockup } from "@/components/VoiceMockup";
+import { SmsMockup } from "@/components/SmsMockup";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -41,7 +41,10 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease }}
           >
-            <Pill>For Nashville service businesses doing $30K–$500K/month</Pill>
+            <Pill>
+              For tree removal, trimming, stump grinding &amp; emergency tree
+              service companies
+            </Pill>
           </motion.div>
 
           <motion.h1
@@ -50,8 +53,10 @@ export function Hero() {
             transition={{ duration: 0.8, ease, delay: 0.05 }}
             className="font-display text-balance text-5xl text-fg sm:text-6xl md:text-7xl"
           >
-            More booked appointments. <br className="hidden sm:inline" />
-            <span className="text-fg-muted">Less chasing leads.</span>
+            10–20 more tree jobs every month.{" "}
+            <span className="text-fg-muted">
+              Without hiring more office staff.
+            </span>
           </motion.h1>
 
           <motion.p
@@ -60,9 +65,9 @@ export function Hero() {
             transition={{ duration: 0.8, ease, delay: 0.15 }}
             className="max-w-xl text-pretty text-base text-fg-muted sm:text-lg"
           >
-            We install an AI receptionist that answers every call, texts every
-            lead in under 60 seconds, and books them straight onto your calendar
-            — for less than the cost of a part-time front desk.
+            Tree Revenue Engine generates more leads, answers every call, books
+            more estimates, and recovers missed opportunities — so your trucks
+            stay full and your phone stops costing you jobs.
           </motion.p>
 
           <motion.div
@@ -72,7 +77,7 @@ export function Hero() {
             className="flex flex-wrap items-center gap-3"
           >
             <Button href="/contact" size="lg" trailingIcon={<ArrowCta />}>
-              Book a Strategy Call
+              Book Your Free Growth Audit
             </Button>
             <Button href="/#frameworks" variant="outline" size="lg">
               See How It Works
@@ -85,8 +90,8 @@ export function Hero() {
             transition={{ duration: 1, ease, delay: 0.5 }}
             className="mt-8 border-t border-line pt-6 text-center text-[11px] font-medium uppercase tracking-[0.18em] text-fg-dim"
           >
-            Currently onboarding our first Nashville clients — case studies
-            publishing Q3 2026.
+            Hand-selecting our first 10 tree service companies. Founder pricing
+            locked for life.
           </motion.p>
         </div>
 
@@ -102,7 +107,7 @@ export function Hero() {
               className="absolute -inset-x-8 -inset-y-12 rounded-[3rem] bg-accent/[0.06] blur-2xl"
             />
             <div className="relative">
-              <VoiceMockup />
+              <SmsMockup />
             </div>
           </div>
         </motion.div>

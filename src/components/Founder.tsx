@@ -32,7 +32,7 @@ export function Founder() {
               </div>
             </div>
             <span className="rounded-full border border-line bg-surface/60 px-3 py-1 text-xs font-medium text-fg-muted backdrop-blur">
-              Founder · Revenue Engine
+              Founder · Tree Revenue Engine
             </span>
           </motion.div>
 
@@ -64,12 +64,15 @@ export function Founder() {
               transition={{ duration: 0.7, ease, delay: 0.1 }}
               className="max-w-2xl text-pretty text-base leading-relaxed text-fg-muted sm:text-lg"
             >
-              I&rsquo;ve spent the last two years building lead systems for my own
-              tax business — took it from zero to 150+ clients using the same
-              AI, SMS, and automation stack I now install for other Nashville
-              operators. Revenue Engine is what I built when founders kept
-              asking me to do it for them. If you book a call, you&rsquo;re
-              talking to me — not a closer, not a setter. I&rsquo;ll tell you if
+              I spent the last two years building lead systems — first for my
+              own tax business (zero to 150+ clients), then for a handful of
+              service-business operators. What I kept seeing in tree services
+              specifically: great crews losing real money on missed calls, slow
+              follow-up, and Facebook ads that nobody knows how to run. So I
+              built Tree Revenue Engine to do all four pieces &mdash; ads,
+              answering, booking, follow-up &mdash; under one roof, for tree
+              companies only. If you book the free audit, you&rsquo;re talking
+              to me. Not a closer, not a setter. I&rsquo;ll tell you if
               we&rsquo;re a fit in the first 10 minutes.
             </motion.p>
 

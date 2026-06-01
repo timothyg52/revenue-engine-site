@@ -30,8 +30,8 @@ export function Results() {
       <div className="mx-auto w-full max-w-6xl px-5 py-24 md:py-32">
         <SectionHeader
           eyebrow="Founding Clients"
-          title="Founding client pricing — limited spots"
-          description="We're hand-selecting our first 10 Nashville service businesses. You get founder pricing locked for life, direct access to me, and a custom-built system in 21 days. After 10, the door closes and prices double."
+          title="Founding pricing — first 10 tree companies only"
+          description="We're hand-selecting our first 10 tree service companies. You get founder pricing locked for life, direct access to me, and a system built around your trucks in 21 days. After 10, the door closes and prices double."
         />
 
         <div className="mt-16 grid gap-5 md:grid-cols-3">

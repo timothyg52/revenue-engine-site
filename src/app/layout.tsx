@@ -23,40 +23,45 @@ const SITE_URL = "https://revenue-engine-ai.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Revenue Engine — AI Lead Gen for Nashville Service Businesses",
-    template: "%s · Revenue Engine",
+    default:
+      "Tree Revenue Engine — More Tree Jobs, More Estimates, Fewer Missed Calls",
+    template: "%s · Tree Revenue Engine",
   },
   description:
-    "We build AI voice agents, SMS bots, and lead conversion systems that turn cold leads into booked appointments. Serving Nashville service businesses.",
+    "Tree Revenue Engine is the growth partner built only for tree service companies. We generate more leads, answer every call, book more estimates, and help you close more jobs — without hiring more office staff.",
   keywords: [
-    "AI lead generation",
-    "Nashville",
-    "AI voice agent",
-    "SMS bot",
-    "appointment booking",
-    "med spa marketing",
-    "home services marketing",
-    "dental marketing",
-    "lead conversion",
+    "tree service marketing",
+    "tree removal leads",
+    "tree trimming leads",
+    "stump grinding leads",
+    "emergency tree service marketing",
+    "storm cleanup leads",
+    "tree company growth",
+    "arborist marketing",
+    "tree service answering service",
+    "tree service appointment booking",
+    "tree service Meta ads",
+    "tree service Facebook ads",
   ],
-  authors: [{ name: "Revenue Engine" }],
-  creator: "Revenue Engine",
-  publisher: "Revenue Engine",
+  authors: [{ name: "Tree Revenue Engine" }],
+  creator: "Tree Revenue Engine",
+  publisher: "Tree Revenue Engine",
   alternates: { canonical: SITE_URL },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "Revenue Engine",
-    title: "Revenue Engine — AI Lead Gen for Nashville Service Businesses",
+    siteName: "Tree Revenue Engine",
+    title:
+      "Tree Revenue Engine — More Tree Jobs, More Estimates, Fewer Missed Calls",
     description:
-      "AI voice agents, SMS bots, and lead conversion systems that book appointments 24/7 for Nashville service businesses.",
+      "The growth partner built only for tree service companies. Generate more leads, answer every call, book more estimates, close more jobs.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Revenue Engine — AI Lead Gen for Nashville",
+    title: "Tree Revenue Engine — Growth Built Only For Tree Companies",
     description:
-      "AI voice agents, SMS bots, and lead conversion systems that turn cold leads into booked appointments.",
+      "More tree jobs. More estimates. Fewer missed calls. Built only for tree removal, trimming, stump grinding, and emergency tree service companies.",
   },
   robots: {
     index: true,
@@ -81,11 +86,11 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "@id": `${SITE_URL}#localbusiness`,
-      name: "Revenue Engine",
+      "@type": "ProfessionalService",
+      "@id": `${SITE_URL}#business`,
+      name: "Tree Revenue Engine",
       description:
-        "AI lead generation agency building voice agents, SMS bots, and lead conversion systems for Nashville service businesses.",
+        "Growth partner for tree service companies. We generate more leads, answer every call, book more estimates, and help tree removal, trimming, stump grinding, and emergency tree service operators close more jobs.",
       url: SITE_URL,
       address: {
         "@type": "PostalAddress",
@@ -93,19 +98,20 @@ const jsonLd = {
         addressRegion: "TN",
         addressCountry: "US",
       },
-      areaServed: [
-        { "@type": "City", name: "Nashville" },
-        { "@type": "City", name: "Franklin" },
-        { "@type": "City", name: "Brentwood" },
-      ],
+      areaServed: { "@type": "Country", name: "United States" },
     },
     {
       "@type": "Service",
       "@id": `${SITE_URL}#service`,
-      name: "AI Lead Generation Systems",
-      provider: { "@id": `${SITE_URL}#localbusiness` },
-      serviceType: "AI Voice Agent, SMS Bot, Lead Conversion",
-      areaServed: { "@type": "State", name: "Tennessee" },
+      name: "Tree Service Revenue Growth System",
+      provider: { "@id": `${SITE_URL}#business` },
+      serviceType:
+        "Lead Generation, Meta Ads, Phone Answering, Appointment Booking, Follow-Up, Review Requests — for tree service companies only",
+      audience: {
+        "@type": "BusinessAudience",
+        audienceType:
+          "Tree Removal Companies, Tree Trimming Companies, Stump Grinding Companies, Emergency Tree Service Companies",
+      },
     },
   ],
 };

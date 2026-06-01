@@ -1,11 +1,11 @@
 import { MapPin, Mail } from "lucide-react";
 
 const navLinks = [
-  { href: "/#frameworks", label: "Frameworks" },
-  { href: "/#process", label: "Process" },
-  { href: "/#results", label: "Offer" },
+  { href: "/#frameworks", label: "How We Grow Tree Companies" },
+  { href: "/#process", label: "Onboarding" },
+  { href: "/#results", label: "Founding Clients" },
   { href: "/#faq", label: "FAQ" },
-  { href: "/contact", label: "Book a Call" },
+  { href: "/contact", label: "Free Growth Audit" },
 ];
 
 const legalLinks = [
@@ -23,10 +23,11 @@ export function Footer() {
               href="/"
               className="font-display text-2xl text-fg hover:text-accent transition-colors"
             >
-              Revenue Engine
+              Tree Revenue Engine
             </a>
             <p className="max-w-xs text-pretty text-sm text-fg-muted">
-              AI lead generation systems for Nashville service businesses.
+              The growth partner built only for tree service companies. More
+              jobs. More estimates. Fewer missed calls.
             </p>
             <address className="mt-2 flex flex-col gap-1.5 text-sm not-italic text-fg-muted">
               <span className="inline-flex items-center gap-1.5">
@@ -81,8 +82,8 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-line pt-6 text-xs text-fg-dim sm:flex-row sm:items-center">
-          <span>© {new Date().getFullYear()} Revenue Engine. All rights reserved.</span>
-          <span>Built in Nashville. For Nashville.</span>
+          <span>© {new Date().getFullYear()} Tree Revenue Engine. All rights reserved.</span>
+          <span>Nashville, TN · Serving tree companies nationwide.</span>
         </div>
       </div>
     </footer>

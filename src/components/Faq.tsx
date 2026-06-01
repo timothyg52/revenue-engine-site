@@ -10,32 +10,44 @@ const ease = [0.16, 1, 0.3, 1] as const;
 
 const faqs = [
   {
-    q: "How fast can you have my system live?",
-    a: "Most clients are live in 14–21 days. The audit takes about 3 days, build is 10–14, and launch with optimization runs from day 18 onward.",
+    q: "We already get enough leads.",
+    a: "Maybe — but are you answering all of them? Booking all of them? Closing all of them? Most tree services miss 30–40% of calls during storm weeks and never follow up on half the estimates they send. At a $1,800 average ticket, the gap between 'enough leads' and 'every lead converted' is usually $10K–$30K a month. The free audit shows you which step is leaking.",
   },
   {
-    q: "What's this actually going to cost me?",
-    a: "Build is $2K–$5K depending on how many channels we wire up (voice, SMS, CRM). Monthly retainer is $1,500–$3,000 and covers optimization, scripts, and reporting. Most clients see the build cost back in 30–45 days. We'll quote exact numbers on the call once we see your call volume and close rate.",
+    q: "We answer our phones.",
+    a: "What about the call at 7:43 PM? The one during the storm at 11 PM? The one that came in while your crew was at lunch? Industry data: even the best small tree services miss 25–40% of inbound calls. We pick up every one — and the ones that slip through get a text back within 30 seconds so they don't call a competitor.",
   },
   {
-    q: "Do I need to be technical?",
-    a: "No. We handle every integration end to end — phone setup, CRM wiring, calendar sync. You'll need to give us access and answer a few intake questions about how you sell. That's it.",
+    q: "We have an office manager.",
+    a: "Great. We work with them. Your office manager handles the relationships, the dispatch, the hard problem-solving. We handle the after-hours calls, the missed-call texts, the cold-lead follow-up they never have time for, and the review requests. One person can't be the dispatcher and the marketing engine — we are the marketing engine.",
   },
   {
-    q: "What CRMs do you work with?",
-    a: "GoHighLevel, HubSpot, Salesforce, Pipedrive, Zoho, Keap, Calendly, Acuity, and Google Calendar. If you're on something else, send it over — we've probably integrated it before.",
+    q: "We've tried marketing before.",
+    a: "Most tree companies who say this tried Facebook ads from a generic agency that handed them leads, then the leads died on the phone. We close the loop: ads, answering, booking, follow-up, reviews — under one roof, one team, every dollar tracked from click to invoice. If we can't show the math after 60 days, we work free until we can.",
   },
   {
-    q: "What if my leads don't respond to AI?",
-    a: "Two things. First, our agents disclose they're AI when asked — no shady stuff. Second, the data so far: response rates are 2–4x higher than human follow-up, because the AI hits leads in under 60 seconds, every time. If a prospect wants a human, we hand them off instantly.",
+    q: "We don't need AI.",
+    a: "You don't need AI — you need every call answered and every estimate followed up. AI is just how we do that 24/7 for less than the cost of a part-time office hire. The customer doesn't care what's behind it, and our system tells them it's an assistant if they ask. They care that their tree is gone.",
   },
   {
-    q: "Do you work outside Nashville?",
-    a: "Right now, no. We're hands-on with every client and we live here. If you're in Memphis, Knoxville, or Chattanooga we'll consider it. Anywhere else, we'll refer you to operators we trust.",
+    q: "How much does it cost?",
+    a: "Build is $2K–$5K depending on how many trucks and what we wire up. Monthly is $1,500–$3,000 for the management + tech, plus your Facebook ad spend (we recommend starting at $1,500–$3,000/mo in ads). Most founding-client tree companies see the build cost back in the first 30 days. Exact numbers come on the audit call once we see your job tickets and current call volume.",
   },
   {
-    q: "How do I know it's actually working?",
-    a: "You get a live dashboard with cost-per-booked-appointment, source attribution, and weekly performance reports. If a system isn't producing, we kill it — we don't keep you on retainer for vanity metrics.",
+    q: "What if it doesn't work?",
+    a: "We guarantee a specific number of extra booked estimates in 60 days or we work free until we hit it. The audit is also free — you can verify the math before you sign anything, and you keep the audit either way.",
+  },
+  {
+    q: "Why shouldn't I just hire another employee?",
+    a: "Cost: an office hire is $40K–$55K a year plus benefits. We're a fraction of that, available 24/7 (no sick days, no turnover, no training), and we do four jobs instead of one (ads, phone, booking, follow-up). You'll still need a great office person — we just take the pieces that don't need a person to do them.",
+  },
+  {
+    q: "How quickly can this be implemented?",
+    a: "Day 1: audit kickoff. Day 3: ads launched. Day 7: phone routing live. Day 14: first booked estimates landing on your calendar. Day 21: review automation on, follow-up sequences running. You sign Monday, you're booking jobs by month-end.",
+  },
+  {
+    q: "How are you different from every other marketing agency?",
+    a: "Marketing agencies hand you leads and walk away. We close the loop. Every Facebook ad we run is tracked to the phone call it generated, to the estimate that got booked, to the job that got closed, to the review that drove the next call. One team, one dashboard, your name on the truck. And we only work with tree service companies — so the scripts, the qualification questions, the storm-call handling, and the ad creative are built for your industry, not borrowed from an HVAC playbook.",
   },
 ];
 
@@ -85,8 +97,8 @@ export function Faq() {
       <div className="mx-auto w-full max-w-3xl px-5 py-24 md:py-32">
         <SectionHeader
           eyebrow="FAQ"
-          title="Straight answers."
-          description="If you've still got questions after this, the strategy call is free."
+          title="The 10 things every tree company owner asks."
+          description="Straight answers. If you've still got questions after this, the growth audit is free."
         />
 
         <div className="mt-14">

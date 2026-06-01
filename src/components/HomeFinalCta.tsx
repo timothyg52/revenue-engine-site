@@ -30,19 +30,18 @@ export function HomeFinalCta() {
           className="mx-auto max-w-4xl text-center"
         >
           <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-accent">
-            Stop chasing leads. Start booking them.
+            Stop losing tree jobs to missed calls and slow follow-up.
           </h2>
           <p className="mt-5 font-display text-balance text-4xl text-fg sm:text-5xl md:text-6xl">
-            In 21 days your phone stops ringing missed and your calendar starts
-            filling itself.
+            In 21 days your trucks stay full and your calendar fills itself.
           </p>
           <p className="mx-auto mt-6 max-w-xl text-pretty text-base text-fg-muted sm:text-lg">
-            Book a 20-minute strategy call. If we&rsquo;re not a fit, we&rsquo;ll tell
-            you on the call and point you somewhere that is.
+            Book a 20-minute free growth audit. We map your 8 revenue leaks
+            live on the call. You keep the audit either way.
           </p>
           <div className="mt-10 flex justify-center">
             <Button href="/contact" size="lg" trailingIcon={<ArrowCta />}>
-              Book a Strategy Call
+              Book Your Free Growth Audit
             </Button>
           </div>
         </motion.div>

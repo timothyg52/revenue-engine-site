@@ -4,7 +4,7 @@ export const runtime = "edge";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 export const alt =
-  "Revenue Engine — AI Lead Gen for Nashville Service Businesses";
+  "Tree Revenue Engine — More Tree Jobs, More Estimates, Fewer Missed Calls";
 
 export default async function OG() {
   return new ImageResponse(
@@ -41,7 +41,9 @@ export default async function OG() {
               background: "#e8ff5c",
             }}
           />
-          <div style={{ display: "flex", fontWeight: 500 }}>Revenue Engine</div>
+          <div style={{ display: "flex", fontWeight: 500 }}>
+            Tree Revenue Engine
+          </div>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
@@ -55,9 +57,9 @@ export default async function OG() {
               fontWeight: 600,
             }}
           >
-            <div style={{ display: "flex" }}>More booked appointments.</div>
+            <div style={{ display: "flex" }}>10–20 more tree jobs</div>
             <div style={{ display: "flex", color: "#a1a1aa" }}>
-              Less chasing leads.
+              every month.
             </div>
           </div>
           <div
@@ -69,8 +71,8 @@ export default async function OG() {
               lineHeight: 1.3,
             }}
           >
-            AI voice agents, SMS bots, and lead conversion systems for Nashville
-            service businesses.
+            Built only for tree removal, trimming, stump grinding, and
+            emergency tree service companies.
           </div>
         </div>
 
@@ -85,8 +87,8 @@ export default async function OG() {
             paddingTop: "24px",
           }}
         >
-          <div style={{ display: "flex" }}>revenue-engine-ai.com</div>
-          <div style={{ display: "flex" }}>Built in Nashville, TN</div>
+          <div style={{ display: "flex" }}>Tree Revenue Engine</div>
+          <div style={{ display: "flex" }}>Nashville, TN</div>
         </div>
       </div>
     ),

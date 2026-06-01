@@ -31,15 +31,14 @@ export function FinalCta() {
           className="mx-auto max-w-4xl text-center"
         >
           <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-accent">
-            Stop chasing leads. Start booking them.
+            Built only for tree service companies.
           </h2>
           <p className="mt-5 font-display text-balance text-4xl text-fg sm:text-5xl md:text-6xl">
-            In 21 days your phone stops ringing missed and your calendar starts
-            filling itself.
+            10–20 more tree jobs per month. Without hiring more office staff.
           </p>
           <p className="mx-auto mt-6 max-w-xl text-pretty text-base text-fg-muted sm:text-lg">
-            Book a 20-minute strategy call. If we&rsquo;re not a fit, we&rsquo;ll tell
-            you on the call and point you somewhere that is.
+            Book the free growth audit, or send your numbers below. Either way,
+            you&rsquo;ll know exactly where your trucks are losing revenue.
           </p>
         </motion.div>
 

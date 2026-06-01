@@ -5,10 +5,10 @@ import { motion } from "motion/react";
 const ease = [0.16, 1, 0.3, 1] as const;
 
 const items = [
+  "Built only for tree service companies",
   "Two years building lead systems",
-  "150+ tax clients served",
-  "Nashville-based",
-  "On-camera guarantee: you're always talking to me",
+  "150+ clients served in prior business",
+  "Founder-led: you're always talking to me",
 ];
 
 export function SocialProof() {

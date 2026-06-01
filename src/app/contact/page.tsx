@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Book a 20-minute strategy call or send your numbers — Revenue Engine will respond by the next business day.",
+    "Book a 20-minute growth audit for your tree service company — Tree Revenue Engine will respond by the next business day.",
   alternates: { canonical: "https://revenue-engine-ai.com/contact" },
   robots: { index: true, follow: true },
 };

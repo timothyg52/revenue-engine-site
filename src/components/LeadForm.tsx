@@ -241,8 +241,8 @@ export function LeadForm() {
             {...register("smsConsent")}
           />
           <span>
-            I agree to receive SMS messages from Revenue Engine (required to
-            book)
+            I agree to receive SMS messages from Tree Revenue Engine (required
+            to book)
           </span>
         </label>
         {errors.smsConsent ? (
@@ -265,11 +265,11 @@ export function LeadForm() {
         }
         className="mt-1"
       >
-        {submitState === "submitting" ? "Sending…" : "Get my custom audit"}
+        {submitState === "submitting" ? "Sending…" : "Send My Free Growth Audit"}
       </Button>
 
       <p className="text-xs leading-relaxed text-fg-dim">
-        By submitting, you consent to receive SMS messages and calls from
+        By submitting, you consent to receive SMS messages and calls from Tree
         Revenue Engine at the number provided, including via automated systems.
         Message frequency varies. Msg &amp; data rates may apply. Reply STOP to
         opt out, HELP for help. Consent is not a condition of purchase. See our{" "}

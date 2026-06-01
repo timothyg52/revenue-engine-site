@@ -1,8 +1,10 @@
-# Revenue Engine — Marketing Site
+# Tree Revenue Engine — Marketing Site
 
-Production-ready Next.js marketing site for **Revenue Engine**, an AI lead generation agency serving Nashville service businesses (med spas, home services, dental, law firms, fitness, real estate).
+Production-ready Next.js marketing site for **Tree Revenue Engine**, the growth partner built only for tree service companies (tree removal, tree trimming, stump grinding, and emergency tree service operators).
 
-Single-page anchor-nav layout with embedded GoHighLevel booking widget, lead capture form, lead-magnet capture, and a 5-leak audit download flow.
+Single-page anchor-nav layout with embedded GoHighLevel booking widget, lead capture form, lead-magnet capture, and a Revenue Leak Audit Worksheet download.
+
+> **Domain note**: site currently ships under `revenue-engine-ai.com` while A2P 10DLC carrier approval lands. Brand pivot to `treerevenueengine.com` scheduled for after approval clears (see Option C in commit history). Internal source identifiers and webhook source fields still reference the legacy domain — these are logical identifiers, not user-facing copy, and stay until the domain swap.
 
 ## Stack
 
@@ -152,4 +154,4 @@ src/
 
 ## License
 
-Private. © Revenue Engine.
+Private. © Tree Revenue Engine.

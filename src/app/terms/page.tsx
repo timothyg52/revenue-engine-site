@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Revenue Engine terms of service — service agreement, SMS/email consent, and Tennessee-law governance.",
+    "Tree Revenue Engine terms of service — service agreement, SMS/email consent, and Tennessee-law governance.",
   alternates: { canonical: "https://revenue-engine-ai.com/terms" },
   robots: { index: true, follow: true },
 };
@@ -29,10 +29,13 @@ export default function TermsPage() {
 
           <div className="flex flex-col gap-6 text-pretty text-base leading-relaxed text-fg-muted">
             <p>
-              By using revenue-engine-ai.com, you agree to these terms. Revenue
-              Engine provides AI lead generation consulting and software
-              services. Service agreements are governed by individual signed
-              contracts. We make no guarantees of specific results. By
+              By using revenue-engine-ai.com, you agree to these terms. Tree
+              Revenue Engine provides revenue growth services to tree service
+              companies (tree removal, tree trimming, stump grinding, and
+              emergency tree service operators) — including lead generation,
+              advertising, phone answering, appointment booking, follow-up, and
+              review request automation. Service agreements are governed by
+              individual signed contracts. We make no guarantees of specific results. By
               submitting forms or providing your phone number, you consent to
               SMS and email communications as described in our{" "}
               <a

@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "Revenue Engine privacy policy — what data we collect, how we use it, and how SMS opt-in consent is handled.",
+    "Tree Revenue Engine privacy policy — what data we collect, how we use it, and how SMS opt-in consent is handled.",
   alternates: { canonical: "https://revenue-engine-ai.com/privacy" },
   robots: { index: true, follow: true },
 };
@@ -29,9 +29,10 @@ export default function PrivacyPage() {
 
           <div className="flex flex-col gap-8 text-pretty text-base leading-relaxed text-fg-muted">
             <p>
-              Revenue Engine (&ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our&rdquo;)
-              operates revenue-engine-ai.com and provides AI lead generation
-              services to service businesses.
+              Tree Revenue Engine (&ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our&rdquo;)
+              operates revenue-engine-ai.com and provides revenue growth
+              services to tree service companies (tree removal, tree
+              trimming, stump grinding, and emergency tree service operators).
             </p>
 
             <section>
@@ -64,7 +65,7 @@ export default function PrivacyPage() {
               <p>
                 By providing your phone number on our website or by giving
                 verbal consent during a call, you agree to receive SMS messages
-                from Revenue Engine related to scheduling, follow-ups, service
+                from Tree Revenue Engine related to scheduling, follow-ups, service
                 updates, and responses to your inquiries. Message frequency
                 varies. Message and data rates may apply. Reply STOP to
                 unsubscribe, HELP for help.
@@ -115,7 +116,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="mb-3 font-display text-2xl text-fg">Contact</h2>
               <address className="not-italic">
-                Revenue Engine
+                Tree Revenue Engine
                 <br />
                 Nashville, TN
                 <br />

@@ -8,21 +8,21 @@ const ease = [0.16, 1, 0.3, 1] as const;
 const steps = [
   {
     days: "Days 1–3",
-    title: "Audit & Strategy",
+    title: "Map the Leaks",
     body:
-      "We map your current lead flow, find the leaks, and design the system that fixes them.",
+      "We walk your phone log, your last 30 days of estimates, and your current Facebook ads (or lack of). We show you exactly where the missed revenue is hiding — by job type, by time of day, by funnel step.",
   },
   {
     days: "Days 4–17",
-    title: "Build & Integrate",
+    title: "Build the System",
     body:
-      "We build the AI agents, write the scripts, wire up your CRM, and stress-test everything before it touches a real lead.",
+      "We launch the Facebook ads, set up the phone answering, write the qualification questions for tree removal vs. trimming vs. stump grinding vs. emergency calls, and wire it all into your calendar before any real lead touches it.",
   },
   {
     days: "Day 18+",
-    title: "Launch & Optimize",
+    title: "Book Jobs On Autopilot",
     body:
-      "We go live, watch the data daily, and tune the system every week until your numbers compound.",
+      "Calls answered. Estimates booked. Follow-up running. Reviews coming in. We watch every dollar weekly and tune anything that's not pulling its weight.",
   },
 ];
 
@@ -31,9 +31,9 @@ export function Process() {
     <section id="process" className="relative border-b border-line">
       <div className="mx-auto w-full max-w-6xl px-5 py-24 md:py-32">
         <SectionHeader
-          eyebrow="Process"
-          title="From audit to autopilot in 21 days."
-          description="You sign Monday. We're booking your appointments by month-end."
+          eyebrow="Onboarding"
+          title="From audit to booked jobs in 21 days."
+          description="You sign Monday. We're booking estimates on your calendar by month-end. No long contracts, no setup fees stacked on top, no 'we'll get to it next quarter.'"
         />
 
         <div className="relative mt-16 grid gap-5 md:grid-cols-3 md:gap-6">

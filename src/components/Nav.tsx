@@ -7,9 +7,9 @@ import { Button, ArrowCta } from "@/components/ui/Button";
 import { cn } from "@/lib/cn";
 
 const links = [
-  { href: "/#frameworks", label: "Frameworks" },
-  { href: "/#process", label: "Process" },
-  { href: "/#results", label: "Offer" },
+  { href: "/#frameworks", label: "How It Works" },
+  { href: "/#process", label: "Onboarding" },
+  { href: "/#results", label: "Founding Clients" },
   { href: "/#faq", label: "FAQ" },
 ];
 
@@ -56,10 +56,10 @@ export function Nav() {
           className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5"
         >
           <a
-            href="#top"
+            href="/"
             className="font-display text-xl tracking-tight text-fg hover:text-accent transition-colors"
           >
-            Revenue Engine
+            Tree Revenue Engine
           </a>
 
           <ul className="hidden items-center gap-8 md:flex">
