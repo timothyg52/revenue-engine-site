@@ -8,7 +8,7 @@ import { WhoThisIsFor } from "@/components/WhoThisIsFor";
 import { Faq } from "@/components/Faq";
 import { Founder } from "@/components/Founder";
 import { SocialProof } from "@/components/SocialProof";
-import { FinalCta } from "@/components/FinalCta";
+import { HomeFinalCta } from "@/components/HomeFinalCta";
 import { Footer } from "@/components/Footer";
 import { StickyMobileCta } from "@/components/StickyMobileCta";
 
@@ -26,7 +26,7 @@ export default function Home() {
         <Faq />
         <Founder />
         <SocialProof />
-        <FinalCta />
+        <HomeFinalCta />
       </main>
       <Footer />
       <StickyMobileCta />

@@ -5,7 +5,7 @@ const navLinks = [
   { href: "/#process", label: "Process" },
   { href: "/#results", label: "Offer" },
   { href: "/#faq", label: "FAQ" },
-  { href: "/#book", label: "Book a Call" },
+  { href: "/contact", label: "Book a Call" },
 ];
 
 const legalLinks = [

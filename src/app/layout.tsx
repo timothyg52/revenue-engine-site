@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Instrument_Serif } from "next/font/google";
+import ChatWidget from "@/components/ChatWidget";
 import { Providers } from "@/components/Providers";
 import "./globals.css";
 
@@ -123,6 +124,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <ChatWidget />
         <Providers>{children}</Providers>
       </body>
     </html>

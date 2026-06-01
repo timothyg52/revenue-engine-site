@@ -71,10 +71,10 @@ export function Hero() {
             transition={{ duration: 0.8, ease, delay: 0.25 }}
             className="flex flex-wrap items-center gap-3"
           >
-            <Button href="#book" size="lg" trailingIcon={<ArrowCta />}>
+            <Button href="/contact" size="lg" trailingIcon={<ArrowCta />}>
               Book a Strategy Call
             </Button>
-            <Button href="#frameworks" variant="outline" size="lg">
+            <Button href="/#frameworks" variant="outline" size="lg">
               See How It Works
             </Button>
           </motion.div>

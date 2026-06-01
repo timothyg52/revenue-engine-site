@@ -7,10 +7,10 @@ import { Button, ArrowCta } from "@/components/ui/Button";
 import { cn } from "@/lib/cn";
 
 const links = [
-  { href: "#frameworks", label: "Frameworks" },
-  { href: "#process", label: "Process" },
-  { href: "#results", label: "Offer" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#frameworks", label: "Frameworks" },
+  { href: "/#process", label: "Process" },
+  { href: "/#results", label: "Offer" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export function Nav() {
@@ -77,7 +77,7 @@ export function Nav() {
 
           <div className="flex items-center gap-2">
             <Button
-              href="#book"
+              href="/contact"
               variant="primary"
               size="md"
               trailingIcon={<ArrowCta />}
@@ -132,7 +132,7 @@ export function Nav() {
                 className="mt-8"
               >
                 <Button
-                  href="#book"
+                  href="/contact"
                   size="lg"
                   trailingIcon={<ArrowCta />}
                   onClick={() => setOpen(false)}

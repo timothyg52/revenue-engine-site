@@ -38,7 +38,7 @@ export function StickyMobileCta() {
             className="pointer-events-auto flex justify-end px-4 pb-4"
           >
             <a
-              href="#book"
+              href="/contact"
               className="inline-flex min-h-[44px] items-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-medium text-canvas shadow-[0_12px_40px_-8px_rgba(232,255,92,0.5),0_0_0_1px_rgba(232,255,92,0.4)] transition-colors active:bg-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-canvas"
             >
               Book a Call
