@@ -270,10 +270,9 @@ export function LeadForm() {
 
       <p className="text-xs leading-relaxed text-fg-dim">
         By submitting, you consent to receive SMS messages and calls from
-        Revenue Engine at the number provided on this form or through our
-        website chat widget, including via automated systems. Message frequency
-        varies. Msg &amp; data rates may apply. Reply STOP to opt out, HELP for
-        help. Consent is not a condition of purchase. See our{" "}
+        Revenue Engine at the number provided, including via automated systems.
+        Message frequency varies. Msg &amp; data rates may apply. Reply STOP to
+        opt out, HELP for help. Consent is not a condition of purchase. See our{" "}
         <a
           href="/privacy"
           className="text-fg-muted underline-offset-4 hover:text-accent hover:underline"

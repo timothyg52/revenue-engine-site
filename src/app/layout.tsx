@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Instrument_Serif } from "next/font/google";
-import Script from "next/script";
 import { Providers } from "@/components/Providers";
 import "./globals.css";
 
@@ -123,13 +122,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <Script
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="6a18670796c166bea6959fdb"
-          data-source="WEB_USER"
-          strategy="afterInteractive"
         />
         <Providers>{children}</Providers>
       </body>

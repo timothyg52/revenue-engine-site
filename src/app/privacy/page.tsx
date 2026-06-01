@@ -62,12 +62,12 @@ export default function PrivacyPage() {
                 SMS Communications
               </h2>
               <p>
-                By providing your phone number on this form or through our
-                website chat widget, or by giving verbal consent during a call,
-                you agree to receive SMS messages from Revenue Engine related
-                to scheduling, follow-ups, service updates, and responses to
-                your inquiries. Message frequency varies. Message and data
-                rates may apply. Reply STOP to unsubscribe, HELP for help.
+                By providing your phone number on our website or by giving
+                verbal consent during a call, you agree to receive SMS messages
+                from Revenue Engine related to scheduling, follow-ups, service
+                updates, and responses to your inquiries. Message frequency
+                varies. Message and data rates may apply. Reply STOP to
+                unsubscribe, HELP for help.
               </p>
             </section>
 
